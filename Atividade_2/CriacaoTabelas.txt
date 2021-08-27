@@ -1,0 +1,43 @@
+
+create database SenacTur;
+
+CREATE TABLE Usuario (
+    IdUsuario INT (11)AUTO_INCREMENT,
+    Nome VARCHAR (200),
+    Login VARCHAR (20),
+    Senha VARCHAR (20),
+    DataNascimento DATETIME,
+    PRIMARY KEY (IdUsuario),
+ ); 
+
+CREATE TABLE PacotesTuristicos(
+    Id INT (11) NOT null,
+    Nome VARCHAR (100),
+    Origem VARCHAR (100),
+    Destino VARCHAR (200),
+    Atrativos VARCHAR (200),
+    Saida DATETIME,
+    Retorno DATETIME,
+    Usuario INT(11),
+    PRIMARY KEY (Id),
+    FOREIGN KEY (Usuario) REFERENCES Usuario,
+);
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+

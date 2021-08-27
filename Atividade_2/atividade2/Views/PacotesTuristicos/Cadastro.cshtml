@@ -1,0 +1,45 @@
+@model PacotesTuristicos
+
+@{
+    ViewData["Title"] = "Cadastro";
+
+}
+
+<form method="POST" asp-action="Cadastro">
+<p>
+    <label asp-for="Nome">Insira o nome do pacote:</label>
+    <input asp-for="Nome">
+</p>
+<p>
+    <label asp-for="Origem">Insira a origem da viagem:</label>
+    <input asp-for="Origem">
+</p>
+<p>
+    <label asp-for="Destino">Insira o destino da viagem:</label>
+    <input asp-for="Destino">
+</p>
+<p>
+    <label asp-for="Atrativos">Insira os atrativos da viagem:</label>
+    <input asp-for="Atrativos">
+</p>
+<p>
+    <label asp-for="Saida">Insira a data de saída da viagem:</label>
+    <input asp-for="Saida" type="date">
+</p>
+<p>
+    <label asp-for="Retorno">Insira a data de retorno da viagem:</label>
+    <input asp-for="Retorno" type="date">
+</p>
+<p>
+    <label asp-for="Usuario">Insira o seu usuário cadastrado:</label>
+    <input asp-for="Usuario">
+</p>
+<p>
+    <input type="submit" value="Enviar">
+</p>
+
+</form>
+
+@* <p>
+    @ViewBag.mensagem
+</p> *@
